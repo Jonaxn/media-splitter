@@ -43,8 +43,6 @@ def split_subtitles(
     line_amount
 ):
     
-    # path, filename = os.path.split(sub_file_path)
-    # path = os.path.dirname(sub_file_path)
     path, filename = os.path.split(sub_file_path)
     filename_without_extension = filename.split(".vtt")[0]
     _, file_type = os.path.splitext(audio_file_path)
@@ -71,7 +69,6 @@ def split_subtitles(
                 continue
             
             sentence = lines[index + 1] 
-            # print(line, sentence)
             
             if line_count == 0:
                 audio_start, _ = [i.strip() for i in line.split("-->")]
@@ -118,7 +115,7 @@ def generate_vtt_file(file_path):
                     )
     
 def main():
-    parser = argparse.ArgumentParser(description="An example script with command-line arguments.")
+    parser = argparse.ArgumentParser(description="media splitter")
     
     parser.add_argument("-f", "--file", dest="filename",  help="media file")
     parser.add_argument("-l", "--lines_amount", dest="lines_amount", type=int, default=10, help="Split or chunk size in lines, for example 10 lines per file")
