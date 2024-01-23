@@ -3,7 +3,7 @@
 split mp4/mp3 file into small pieces with subtitles
 
 `-f`: file path of media file mp4/mp3
-'-l': how many line in one piece of file
+`-l`: how many line in one piece of file
 
 ## whisper
 
@@ -11,7 +11,7 @@ split mp4/mp3 file into small pieces with subtitles
 
 ## ffmpeg
 
-[FFMpeg]: https://www.ffmpeg.org/
+[FFMpeg](https://www.ffmpeg.org/)
 
 ## example
 
